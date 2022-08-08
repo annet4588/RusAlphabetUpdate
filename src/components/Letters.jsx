@@ -1,8 +1,13 @@
 import React from "react";
 
 function Letters(props) {
-  return (
-    <button type="button" className="letter">
+  
+  function handleClick() {
+    console.log(handleClick);
+  }
+
+    return (
+    <button type="button" className="letter" onClick={handleClick}>
       {props.name}
     </button>
   );
